@@ -1,6 +1,6 @@
 # 🍷 Inteligência Artificial para Classificação de Qualidade de Vinhos
 
-👉 **LINK DO APLICATIVO EM PRODUÇÃO:** [Cole Aqui o Link do seu Streamlit quando ficar pronto]
+👉 **LINK DO APLICATIVO EM PRODUÇÃO:** (https://projeto-ia-classificacao-vinhos-hwrccxatkazvscq8sy54ga.streamlit.app/)
 
 ---
 
