@@ -50,7 +50,7 @@ Validação Cruzada Estratificada: Substituímos a validação simples pelo Stra
 
 Novas Métricas Visuais Obrigatórias: Incluímos a plotagem e a interpretação das Matrizes de Confusão e das Curvas ROC (AUC) para todos os modelos avaliados (Regressão Logística, KNN e Random Forest).
 
-Salvamento do Modelo para Produção: Serializamos o pipeline do modelo campeão (Regressão Logística) gerando o arquivo binário modelo_classificacao_vinhos.pkl, permitindo sua exportação e consumo pela nossa interface web externa.
+Salvamento do Modelo para Produção: Serializamos o pipeline do modelo campeão (Regressão Logística) gerando o arquivo binário modelo_classificacao_vinhos.pkl, permitindo sua integração com a aplicação desenvolvida em Streamlit para realização de predições em tempo real.
 ---
 
 ## Tecnologias e Bibliotecas Utilizadas
