@@ -50,7 +50,7 @@ O projeto aborda um problema de Classificação Binária Supervisionada, onde o 
 
 ---
 
-## Evoluções Técnicas Aplicadas da P1 para a P2
+## Evoluções Técnicas Aplicadas da P1 para a P2 - Metodologia 
 
 Este trabalho é a continuação direta do projeto iniciado no primeiro bimestre. Durante a P2, foram aplicadas melhorias técnicas com base nas orientações da professora e nos feedbacks disponibilizados no Moodle.
 
