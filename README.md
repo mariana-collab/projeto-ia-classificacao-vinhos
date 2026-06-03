@@ -47,7 +47,7 @@ Um sistema de Machine Learning para classificação automática da qualidade de 
 
 ## Descrição do Problema
 
-A indústria vitivinícola enfrenta o desafio de avaliar a qualidade dos vinhos de forma objetiva e automatizada. Atualmente, a classificação de vinhos depende frequentemente de degustadores humanos, o que é subjetivo, custoso e demorado.
+A indústria vitivinícola enfrenta o desafio de avaliar a qualidade dos vinhos de forma objetiva e automatizada. Atualmente, a classificação de vinhos depende frequentemente de degustadores humanos[...]
 
 Este projeto propõe uma solução automática utilizando Machine Learning para classificar vinhos tintos em duas categorias:
 - **Vinho Excelente**: Vinhos de alta qualidade (nota ≥ 7)
@@ -350,11 +350,23 @@ projeto-ia-classificacao-vinhos/
 ├── 🐍 app.py                                       
 │   └── Aplicação interativa Streamlit
 │
-├── 💾 modelo_classificacao_vinhos.pkl              
-│   └── Modelo treinado serializado com Joblib
+├── 📁 model/
+│   ├── 💾 modelo_final.pkl
+│   │   └── Modelo final salvo (Random Forest)
+│   └── 💾 modelo_final.joblib
+│       └── Alternativa ao .pkl, caso o grupo use .joblib
 │
-├── 📓 P2_Classificação_de_Vinhos_FINAL.ipynb      
-│   └── Notebook Jupyter com análise completa
+├── 📁 notebooks/
+│   └── 📓 notebook_atualizado.ipynb
+│       └── Notebook revisado da P1
+│
+├── 📁 reports/
+│   └── 📄 relatorio_atualizado.pdf
+│       └── Relatório final atualizado
+│
+├── 📁 data/
+│   └── 📊 dataset.csv
+│       └── Dataset utilizado, se puder ser versionado
 │
 └── 📁 .devcontainer/
     └── 📄 devcontainer.json
@@ -368,8 +380,15 @@ projeto-ia-classificacao-vinhos/
 | `README.md` | Documentação completa do projeto com todos os tópicos | - |
 | `requirements.txt` | Lista de dependências Python para instalar com pip | ~1 KB |
 | `app.py` | Aplicação Streamlit com interface interativa para predições | ~3.5 KB |
-| `modelo_classificacao_vinhos.pkl` | Modelo Random Forest treinado e serializado | ~2 KB |
-| `P2_Classificação_de_Vinhos_FINAL.ipynb` | Notebook Jupyter com análise, treinamento e avaliação | ~464 KB |
+| **`model/`** | **Diretório contendo modelos treinados** | - |
+| `model/modelo_final.pkl` | Modelo Random Forest treinado e serializado com Pickle | ~2 KB |
+| `model/modelo_final.joblib` | Alternativa ao .pkl, caso o grupo use .joblib | ~2 KB |
+| **`notebooks/`** | **Diretório contendo notebooks Jupyter** | - |
+| `notebooks/notebook_atualizado.ipynb` | Notebook revisado com análise completa e atualizado | ~464 KB |
+| **`reports/`** | **Diretório contendo relatórios do projeto** | - |
+| `reports/relatorio_atualizado.pdf` | Relatório final atualizado com resultados e análises | ~500 KB |
+| **`data/`** | **Diretório contendo dados do projeto** | - |
+| `data/dataset.csv` | Dataset Wine Quality em formato CSV (opcional - para versionamento) | ~100 KB |
 | `.devcontainer/devcontainer.json` | Configuração para ambiente de desenvolvimento containerizado | ~1 KB |
 
 ---
@@ -399,6 +418,7 @@ projeto-ia-classificacao-vinhos/
 
 ### Salvamento de Modelos
 - **Joblib** - Serialização e desserialização de modelos
+- **Pickle** - Formato alternativo de serialização
 
 ### Desenvolvimento Web
 - **Streamlit** - Framework para criação de aplicações web interativas
@@ -467,8 +487,8 @@ O navegador abrirá automaticamente em `http://localhost:8888`
 
 ### Passo 7: Abrir o Notebook
 
-1. Procure pelo arquivo `P2_Classificação_de_Vinhos_FINAL.ipynb` na lista de arquivos
-2. Clique nele para abrir
+1. Procure pela pasta `notebooks/`
+2. Clique no arquivo `notebook_atualizado.ipynb` para abrir
 
 ### Passo 8: Executar as Células
 
@@ -512,7 +532,7 @@ O notebook está organizado nas seguintes seções:
 - O notebook pode levar alguns minutos para executar completamente (depende do computador)
 - Não é necessário modificar nada no notebook para executá-lo
 - Os gráficos e resultados aparecerão dentro do notebook
-- O modelo treinado será salvo automaticamente como `modelo_classificacao_vinhos.pkl`
+- O modelo treinado será salvo automaticamente na pasta `model/`
 
 ---
 
@@ -522,7 +542,8 @@ O notebook está organizado nas seguintes seções:
 
 - Python 3.11 ou superior
 - Dependências instaladas (ver seção anterior)
-- Arquivo `modelo_classificacao_vinhos.pkl` deve estar no mesmo diretório que `app.py`
+- Arquivo `modelo_final.pkl` ou `modelo_final.joblib` deve estar na pasta `model/`
+- O arquivo `app.py` deve estar no diretório raiz do projeto
 
 ### Passo 1: Clonar o Repositório (se ainda não fez)
 
@@ -615,7 +636,7 @@ Para interromper o servidor Streamlit, pressione `Ctrl + C` no terminal onde o c
 - **Solução:** Acesse manualmente `http://localhost:8501` no navegador
 
 **Problema:** Erro "Arquivo modelo não encontrado"
-- **Solução:** Certifique-se de que `modelo_classificacao_vinhos.pkl` está no mesmo diretório que `app.py`
+- **Solução:** Certifique-se de que `modelo_final.pkl` ou `modelo_final.joblib` está na pasta `model/`
 
 **Problema:** Erro de dependências
 - **Solução:** Execute `pip install -r requirements.txt` novamente
@@ -679,7 +700,7 @@ Apesar dos bons resultados obtidos, o projeto apresenta algumas limitações imp
 
 ### Principais Conquistas
 
-Este projeto demonstrou com sucesso que algoritmos de Machine Learning podem ser aplicados com eficiência na classificação da qualidade de vinhos utilizando características físico-químicas mensuráveis.
+Este projeto demonstrou com sucesso que algoritmos de Machine Learning podem ser aplicados com eficiência na classificação da qualidade de vinhos utilizando características físico-químicas mensuráveis, transformando dados brutos em insights e predições automatizadas.
 
 ### Evoluções da P1 para P2
 
@@ -692,6 +713,9 @@ O projeto evoluiu significativamente em relação ao primeiro bimestre:
 5. **Métricas visuais aprimoradas** (matrizes de confusão, curvas ROC)
 6. **Modelo serializado para produção** em formato .pkl
 7. **Aplicação web interativa** em Streamlit
+8. **Nova organização de diretórios** para melhor estruturação (model/, notebooks/, reports/, data/)
+9. **Inclusão do dataset em CSV** para maior transparência e reprodutibilidade
+10. **Relatório final em PDF** documentando todos os resultados e análises
 
 ### Modelo Escolhido
 
