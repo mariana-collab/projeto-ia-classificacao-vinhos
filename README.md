@@ -61,7 +61,7 @@ A classificação é realizada baseando-se exclusivamente em atributos físico-q
 
 O objetivo principal é desenvolver um modelo de Machine Learning capaz de:
 
-1. **Classificar vinhos tintos** em categorias de qualidade (Excelente ou Regular) com base em suas características físico-químicas
+1. **Classificar vinhos tintos** em categorias de qualidade (Excelente ou Comum) com base em suas características físico-químicas
 2. **Comparar diferentes algoritmos** de classificação (Regressão Logística, KNN, Random Forest) para identificar o melhor desempenho
 3. **Implementar boas práticas** de Machine Learning, incluindo tratamento de data leakage, balanceamento de classes e validação cruzada
 4. **Disponibilizar uma solução interativa** através de uma aplicação web em Streamlit para predições em tempo real
@@ -72,7 +72,7 @@ O objetivo principal é desenvolver um modelo de Machine Learning capaz de:
 
 **Nome do Dataset:** Wine Quality (Qualidade de Vinho)
 
-**Fonte:** [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/109/wine+quality)
+**Fonte:** [Kaggle Vinho Tinto de Qualidade](https://www.kaggle.com/datasets/uciml/red-wine-quality-cortez-et-al-2009?resource=download)
 
 **Quantidade de Registros:** 1.599 amostras de vinho tinto (após remoção de 240 duplicatas)
 
@@ -107,7 +107,7 @@ A variável alvo `quality` foi transformada em `quality_bin` para classificaçã
 
 Este é um problema de aprendizado supervisionado (dados rotulados) onde o objetivo é prever uma variável categórica com duas classes:
 - Classe positiva (1): Vinho Excelente
-- Classe negativa (0): Vinho Regular
+- Classe negativa (0): Vinho Comum
 
 ---
 
@@ -142,7 +142,7 @@ Este é um problema de aprendizado supervisionado (dados rotulados) onde o objet
 
 ### 5. Divisão dos Dados
 
-- **Proporção:** 80% treino, 20% teste
+- **Proporção:** 60% treino, 20% validação, 20% teste
 - **Estratificação:** Mantida a proporção de classes em ambos os conjuntos
 - **Random State:** Definido para reprodutibilidade (42)
 
