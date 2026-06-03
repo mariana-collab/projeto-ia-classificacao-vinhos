@@ -747,27 +747,3 @@ O desenvolvimento da aplicação em Streamlit transformou o modelo treinado em u
 
 ---
 
-## 📚 Referências
-
-- [Scikit-Learn Documentation](https://scikit-learn.org/stable/)
-- [Streamlit Documentation](https://docs.streamlit.io/)
-- [Wine Quality Dataset - UCI ML Repository](https://archive.ics.uci.edu/dataset/109/wine+quality)
-- [Pandas Documentation](https://pandas.pydata.org/docs/)
-- [NumPy Documentation](https://numpy.org/doc/)
-- [Matplotlib Documentation](https://matplotlib.org/stable/contents.html)
-- [Seaborn Documentation](https://seaborn.pydata.org/)
-- [Joblib Documentation](https://joblib.readthedocs.io/)
-
----
-
-## 📞 Suporte e Contato
-
-Para dúvidas, sugestões ou problemas relacionados ao projeto, entre em contato com os integrantes do grupo através do repositório GitHub.
-
-**Repositório GitHub:** [mariana-collab/projeto-ia-classificacao-vinhos](https://github.com/mariana-collab/projeto-ia-classificacao-vinhos)
-
----
-
-**Última atualização:** Junho de 2026
-
-**Status do Projeto:** ✅ Concluído e em Produção
