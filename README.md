@@ -298,11 +298,11 @@ Os modelos foram avaliados utilizando as seguintes métricas:
 
 | Métrica | Regressão Logística | KNN | Random Forest |
 |---------|-------------------|-----|---------------|
-| Acurácia | **0.87** | 0.85 | 0.85 |
-| Precisão | **0.85** | 0.82 | 0.83 |
-| Recall | **0.72** | 0.68 | 0.71 |
-| F1-Score | **0.78** | 0.75 | 0.77 |
-| ROC-AUC | **0.92** | 0.89 | 0.91 |
+| Acurácia | 0.768382 | 0.860294 | 0.875000 |
+| Precisão | 0.664042 | 0.689393 | 0.751708 |
+| Recall | 0.809026 | 0.634503 | 0.597470 |
+| F1-Score | 0.676429 | 0.654129 | 0.662587 |
+| ROC-AUC | 0.883496 | 0.784761 | 0.871593 |
 
 ### Impacto da Remoção de Duplicatas
 
@@ -329,10 +329,10 @@ Real  Excelente    58        22      (80 total)
 
 ### Interpretação dos Resultados
 
-1. **Acurácia de 87%:** O modelo acerta em 87% dos casos
-2. **Precisão de 85%:** Quando prediz "Excelente", está correto em 85% das vezes
-3. **Recall de 72%:** Identifica 72% dos vinhos excelentes
-4. **ROC-AUC de 0.92:** Excelente capacidade discriminativa
+1. **Acurácia de 76.84%:** O modelo acerta em ~77% dos casos na validação cruzada
+2. **Precisão de 66.40%:** Quando prediz "Excelente", está correto em ~66% das vezes
+3. **Recall de 80.90%:** Identifica ~81% dos vinhos excelentes
+4. **ROC-AUC de 0.8835:** Excelente capacidade discriminativa (88.35%)
 
 ---
 
@@ -700,7 +700,7 @@ Apesar dos bons resultados obtidos, o projeto apresenta algumas limitações imp
 
 ### Principais Conquistas
 
-Este projeto demonstrou com sucesso que algoritmos de Machine Learning podem ser aplicados com eficiência na classificação da qualidade de vinhos utilizando características físico-químicas mensuráveis, transformando dados brutos em insights e predições automatizadas.
+Este projeto demonstrou com sucesso que algoritmos de Machine Learning podem ser aplicados com eficiência na classificação da qualidade de vinhos utilizando características físico-químicas mensuráveis. A validação cruzada estratificada com 5 folds garantiu avaliações robustas e confiáveis dos modelos.
 
 ### Evoluções da P1 para P2
 
@@ -720,9 +720,9 @@ O projeto evoluiu significativamente em relação ao primeiro bimestre:
 ### Modelo Escolhido
 
 A **Regressão Logística** foi selecionada como modelo final por apresentar:
-- Melhor equilíbrio entre Precisão (85%) e Recall (72%)
-- Maior estabilidade em validação cruzada
-- ROC-AUC de 0.92 (excelente discriminação)
+- Excelente Recall de 80.90% (identifica a maioria dos vinhos excelentes)
+- ROC-AUC de 0.8835 (excelente discriminação)
+- Melhor equilíbrio entre sensibilidade e especificidade
 - Interpretabilidade clara dos coeficientes
 - Eficiência computacional
 
