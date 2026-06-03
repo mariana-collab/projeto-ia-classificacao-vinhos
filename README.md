@@ -47,11 +47,11 @@ Um sistema de Machine Learning para classificação automática da qualidade de 
 
 ## Descrição do Problema
 
-A indústria vitivinícola enfrenta o desafio de avaliar a qualidade dos vinhos de forma objetiva e automatizada. Atualmente, a classificação de vinhos depende frequentemente de degustadores humanos[...]
+A indústria de vinhos enfrenta o desafio de avaliar a qualidade dos vinhos de forma objetiva e automatizada. Atualmente, a classificação de vinhos depende frequentemente de degustadores humanos.
 
 Este projeto propõe uma solução automática utilizando Machine Learning para classificar vinhos tintos em duas categorias:
 - **Vinho Excelente**: Vinhos de alta qualidade (nota ≥ 7)
-- **Vinho Regular**: Vinhos de qualidade comum (nota < 7)
+- **Vinho Comum**: Vinhos de qualidade comum (nota < 7)
 
 A classificação é realizada baseando-se exclusivamente em atributos físico-químicos mensuráveis, oferecendo uma abordagem objetiva e escalável.
 
