@@ -351,8 +351,8 @@ projeto-ia-classificacao-vinhos/
 │   └── Aplicação interativa Streamlit
 │
 ├── 📁 model/
-│   ├── 💾 modelo_final.pkl
-│   │   └── Modelo final salvo (Random Forest)
+│   ├
+│   │   
 │   └── 💾 modelo_final.joblib
 │       └── Alternativa ao .pkl, caso o grupo use .joblib
 │
